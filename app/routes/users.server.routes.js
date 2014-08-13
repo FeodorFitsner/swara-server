@@ -25,12 +25,6 @@ module.exports = function(app) {
 	app.route('/auth/signin').post(users.signin);
 	app.route('/auth/signout').get(users.signout);
 
-	// Setting the facebook oauth routes
-	app.route('/auth/facebook').get(passport.authenticate('facebook', {
-		scope: ['email']
-	}));
-	app.route('/auth/facebook/callback').get(users.oauthCallback('facebook'));
-
 	// Setting the twitter oauth routes
 	app.route('/auth/twitter').get(passport.authenticate('twitter'));
 	app.route('/auth/twitter/callback').get(users.oauthCallback('twitter'));
