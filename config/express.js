@@ -33,7 +33,6 @@ module.exports = function(db) {
 	app.locals.title = config.app.title;
 	app.locals.description = config.app.description;
 	app.locals.keywords = config.app.keywords;
-	app.locals.facebookAppId = '1473022056285622';  // hard-coded with the Swara-Server facebook app Id
 	app.locals.jsFiles = config.getJavaScriptAssets();
 	app.locals.cssFiles = config.getCSSAssets();
 
