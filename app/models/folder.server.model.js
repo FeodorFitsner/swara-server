@@ -20,6 +20,14 @@ var FolderSchema = new Schema({
 		trim: true,
 		required: 'Path cannot be blank'
 	},
+  foldersCount: {
+    type: Number,
+    default: 0,
+  },
+  filesCount: {
+    type: Number,
+    default: 0,
+  },
 	user: {
 		type: Schema.ObjectId,
 		ref: 'User'
