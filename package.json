@@ -7,11 +7,12 @@
     "node": "0.10.x",
     "npm": "1.4.x"
   },
+  "node-main" : "server",
   "main": "index.html",
   "window": {
-    "toolbar": false,
-    "width": 800,
-    "height": 600
+    "toolbar": true,
+    "width": 1200,
+    "height": 800
   },
   "scripts": {
     "start": "grunt",
@@ -35,7 +36,7 @@
     "helmet": "~0.4.0",
     "lodash": "~2.4.1",
     "method-override": "^2.2.0",
-    "mongoose": "^3.9.2",
+    "mongoose": "^3.8.16",
     "morgan": "^1.3.0",
     "nodemailer": "^1.2.2",
     "passport": "~0.2.0",
