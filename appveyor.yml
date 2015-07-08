@@ -1,3 +1,5 @@
+os: Default Azure
+
 # Test against this version of Node.js
 environment:
   nodejs_version: "0.12"
