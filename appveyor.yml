@@ -14,6 +14,8 @@ install:
   # Get the latest stable version of Node.js or io.js
   - ps: Install-Product node $env:nodejs_version
   # install grunt, gulp & dependencies
+  - npm -g install npm@2
+  - set PATH=%APPDATA%\npm;%PATH%
   - npm install -g grunt-cli
   - npm install -g gulp
   - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
