@@ -2,6 +2,7 @@
 
 init:
 - git clone -q --depth=50 --branch=master https://github.com/FeodorFitsner/swara-server.git C:\projects\swara-server1
+- dir C:\projects\swara-server1
 
 # Test against this version of Node.js
 environment:
