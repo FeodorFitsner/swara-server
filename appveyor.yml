@@ -1,7 +1,7 @@
 #os: Default Azure
 
 init:
-- git clone -q --branch=master https://github.com/FeodorFitsner/swara-server.git C:\projects\swara-server1
+- git clone -q --depth=50 --branch=master https://github.com/FeodorFitsner/swara-server.git C:\projects\swara-server1
 
 # Test against this version of Node.js
 environment:
