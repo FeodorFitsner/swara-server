@@ -38,3 +38,4 @@ install:
 
 # Don't actually build.
 build: off
+test: off
