@@ -7,6 +7,8 @@ environment:
   GH_TOKEN:
     secure: 0f2rr+F5Fp2t2D0IF9RLLGQ4DliS/EkGMtaCMQI7aXtSwC6Zgbpg1qqSywHzrYpE
 
+clone_depth: 1
+
 # Install scripts. (runs after repo cloning)
 install:
   # Install NullSoft Scriptable Install System
