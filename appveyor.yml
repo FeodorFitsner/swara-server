@@ -10,7 +10,7 @@ environment:
 # Install scripts. (runs after repo cloning)
 install:
   # Install NullSoft Scriptable Install System
-  - choco install nsis -pre -y
+#  - choco install nsis -pre -y
   # Get the latest stable version of Node.js or io.js
   - ps: Install-Product node $env:nodejs_version
   # install grunt, gulp & dependencies
@@ -21,20 +21,20 @@ install:
   #- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
   - npm install
 
-artifacts:
-  - path: releases
-    name: releases
-    type: zip
+#artifacts:
+#  - path: releases
+#    name: releases
+#    type: zip
 
 # Post-install test scripts.
-test_script:
+#test_script:
   # Output useful info for debugging.
-  - node --version
-  - npm --version
+#  - node --version
+#  - npm --version
   # create installer
-  - grunt build
+#  - grunt build
   # conditionally deploy
-  - cmd: '"C:\\Program Files (x86)\\Git\\bin\\bash.exe" deploy.sh'
+#  - cmd: '"C:\\Program Files (x86)\\Git\\bin\\bash.exe" deploy.sh'
 
 # Don't actually build.
 build: off
