@@ -38,6 +38,9 @@ install:
   # conditionally deploy
 #  - cmd: '"C:\\Program Files (x86)\\Git\\bin\\bash.exe" deploy.sh'
 
+on_failure:
+- appveyor PushArtifact npm-debug.log
+
 # Don't actually build.
 build: off
 test: off
